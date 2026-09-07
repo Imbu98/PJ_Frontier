@@ -2510,7 +2510,7 @@ void AFrontierPlayerCharacter::ServerSetAttackInputState_Implementation(const bo
 	}
 }
 
-void AFrontierPlayerCharacter::ServerReportAttackHit_Implementation(
+void AFrontierPlayerCharacter::	ServerReportAttackHit_Implementation(
 	AActor* TargetActor,
 	const FVector_NetQuantize HitLocation,
 	const FFrontierMeleeTraceOverrides TraceOverrides)
