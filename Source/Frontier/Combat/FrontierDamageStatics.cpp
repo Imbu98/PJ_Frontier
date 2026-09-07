@@ -583,6 +583,7 @@ FFrontierDamageResult UFrontierDamageStatics::ApplyDamage(AActor* SourceActor, A
 	{
 		SpecHandle.Data->AddDynamicAssetTag(DamageRequest.HitReactionTag);
 	}
+
 	TargetASC->ApplyGameplayEffectSpecToSelf(*SpecHandle.Data.Get());
 
 	for (TSubclassOf<UGameplayEffect> AdditionalEffectClass : DamageRequest.AdditionalEffectClasses)
